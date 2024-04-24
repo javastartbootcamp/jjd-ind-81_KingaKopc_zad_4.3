@@ -10,6 +10,7 @@ public class Rectangle {
     }
 
     public double getA() {
+
         return a;
     }
 
@@ -18,14 +19,19 @@ public class Rectangle {
     }
 
     public double getB() {
+
         return b;
     }
 
     public void setB(double b) {
+
         this.b = b;
     }
 
+
     double calculateRectPerimeter(Rectangle rectangle) {
+
         return 2 * rectangle.getA() + 2 * rectangle.getB();
     }
+
 }
