@@ -4,20 +4,20 @@ public class Main {
     public static void main(String[] args) {
 
         Square square = new Square(5);
-        ShapeCalculator calc = new ShapeCalculator();
-        double squareArea = calc.calculateSquareArea(square);
+        double squareArea = square.calculateSquareArea(square);
         System.out.println("pole kwadratu wynosi : " + squareArea);
 
         Circle circle = new Circle(3);
-        double circleArea = calc.calculateCircleArea(circle);
+        double circleArea = circle.calculateCircleArea(circle);
         System.out.println("Pole koła wynosi : " + circleArea);
 
         Triangle triangle = new Triangle(1, 2, 3);
-        double trianglePerimeter = calc.calculateTrianglePerimeter(triangle);
+        double trianglePerimeter = triangle.calculateTrianglePerimeter(triangle);
         System.out.println("Obwód trójkąta wynosi : " + trianglePerimeter);
 
         Rectangle rectangle = new Rectangle(1, 2);
-        double rectPerimeter = calc.calculateRectPerimeter(rectangle);
+        double rectPerimeter = rectangle.calculateRectPerimeter(rectangle);
         System.out.println("Obwód prostokąta wynosi :  " + rectPerimeter);
     }
 }
+//Wydaje mi się, że w 2 cześci zadania powinnam zastosować settery, ale nw jak?
