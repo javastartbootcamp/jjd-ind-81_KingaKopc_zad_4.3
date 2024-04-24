@@ -16,7 +16,10 @@ public class Circle {
         this.r = r;
     }
 
+
     double calculateCircleArea(Circle circle) {
+
         return Math.pow(circle.getR(), 2);
     }
+
 }

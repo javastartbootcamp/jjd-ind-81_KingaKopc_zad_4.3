@@ -12,6 +12,7 @@ public class Triangle {
     }
 
     public double getA() {
+
         return a;
     }
 
@@ -35,7 +36,10 @@ public class Triangle {
         this.c = c;
     }
 
+
     double calculateTrianglePerimeter(Triangle triangle) {
+
         return triangle.getA() + triangle.getB() + triangle.getC();
     }
+
 }
